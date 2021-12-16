@@ -33,14 +33,24 @@ using CSharpConcepts.Polymorphism;
 //ipark.StopVehicle();
 
 //abstract class
-Driving driving = new Driving();
-VehicleDriver driv = new VehicleDriver();
+//Driving driving = new Driving();
+//VehicleDriver driv = new VehicleDriver();
 //driv.StartVehicle();
 //driv.DriveVehicle();
 //driv.StopVehicle();
 
 
 //singleton class
-Singleton s1 = Singleton.Instance;
-Singleton s2 = Singleton.Instance;
-Console.WriteLine(Singleton.Count);
+//Singleton s1 = Singleton.Instance;
+//Singleton s2 = Singleton.Instance;
+//Console.WriteLine(Singleton.Count);
+
+//VariableTypes
+VariableTypes vt = new VariableTypes();
+vt.DemonstrateValueTypes();
+vt.DemonstrateRefTypes();
+
+
+//Console.WriteLine(StaticClassDemo.connectionString);
+//StaticClassDemo.ChangeDatabase("BankStorage");
+//Console.WriteLine(StaticClassDemo.connectionString);

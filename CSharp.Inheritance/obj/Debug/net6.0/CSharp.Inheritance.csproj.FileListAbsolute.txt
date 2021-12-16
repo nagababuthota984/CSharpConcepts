@@ -1,0 +1,16 @@
+C:\Users\hp\source\repos\CSharpConcepts\CSharp.Inheritance\bin\Debug\net6.0\CSharp.Inheritance.exe
+C:\Users\hp\source\repos\CSharpConcepts\CSharp.Inheritance\bin\Debug\net6.0\CSharp.Inheritance.deps.json
+C:\Users\hp\source\repos\CSharpConcepts\CSharp.Inheritance\bin\Debug\net6.0\CSharp.Inheritance.runtimeconfig.json
+C:\Users\hp\source\repos\CSharpConcepts\CSharp.Inheritance\bin\Debug\net6.0\CSharp.Inheritance.dll
+C:\Users\hp\source\repos\CSharpConcepts\CSharp.Inheritance\bin\Debug\net6.0\ref\CSharp.Inheritance.dll
+C:\Users\hp\source\repos\CSharpConcepts\CSharp.Inheritance\bin\Debug\net6.0\CSharp.Inheritance.pdb
+C:\Users\hp\source\repos\CSharpConcepts\CSharp.Inheritance\obj\Debug\net6.0\CSharp.Inheritance.GlobalUsings.g.cs
+C:\Users\hp\source\repos\CSharpConcepts\CSharp.Inheritance\obj\Debug\net6.0\CSharp.Inheritance.csproj.AssemblyReference.cache
+C:\Users\hp\source\repos\CSharpConcepts\CSharp.Inheritance\obj\Debug\net6.0\CSharp.Inheritance.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\source\repos\CSharpConcepts\CSharp.Inheritance\obj\Debug\net6.0\CSharp.Inheritance.AssemblyInfoInputs.cache
+C:\Users\hp\source\repos\CSharpConcepts\CSharp.Inheritance\obj\Debug\net6.0\CSharp.Inheritance.AssemblyInfo.cs
+C:\Users\hp\source\repos\CSharpConcepts\CSharp.Inheritance\obj\Debug\net6.0\CSharp.Inheritance.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\CSharpConcepts\CSharp.Inheritance\obj\Debug\net6.0\CSharp.Inheritance.dll
+C:\Users\hp\source\repos\CSharpConcepts\CSharp.Inheritance\obj\Debug\net6.0\ref\CSharp.Inheritance.dll
+C:\Users\hp\source\repos\CSharpConcepts\CSharp.Inheritance\obj\Debug\net6.0\CSharp.Inheritance.pdb
+C:\Users\hp\source\repos\CSharpConcepts\CSharp.Inheritance\obj\Debug\net6.0\CSharp.Inheritance.genruntimeconfig.cache
