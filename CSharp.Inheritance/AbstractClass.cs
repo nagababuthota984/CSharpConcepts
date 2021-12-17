@@ -6,25 +6,31 @@ using System.Threading.Tasks;
 
 namespace CSharpConcepts.AbstractClass
 {
+    /// <summary>
+    /// when to use -> 1)if the members are not public 2)if some of the functionality is common among the implementations and remaining is done by extending the class
+    /// example -> driving a tesla car... just have to start and stop the car, since driving is automated and pre-defined.
+    /// </summary>
     public abstract class Driving
     {
-        
-        public void StartVehicle()
-        {
-            Console.WriteLine("Push the start button");
-        }
-        public abstract void DriveVehicle();
-        
-        public void StopVehicle()
-        {
-            Console.WriteLine("Push the stop button");
-        }
-    }
-    public class VehicleDriver : Driving
-    {
-        public override void DriveVehicle()
+
+        public abstract void StartVehicle();
+        public  void DriveVehicle()
         {
             Console.WriteLine("Driving the vehicle");
         }
+
+        public abstract void StopVehicle();
+    }
+    public class VehicleDriver : Driving
+    {
+        public override void StartVehicle()
+        {
+            Console.WriteLine("Starting the vehicle");
+        }
+        public override void StopVehicle()
+        {
+            Console.WriteLine("Stopping the vehicle");
+        }
+
     }
 }

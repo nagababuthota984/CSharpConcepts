@@ -4,6 +4,7 @@ using CSharpConcepts;
 using CSharpConcepts.AbstractClass;
 using CSharpConcepts.Interfaces;
 using CSharpConcepts.Polymorphism;
+using static CSharpConcepts.LiskovSubstitutionPrinciple;
 
 //Inheritance
 //Dog dog = new Dog();
@@ -33,7 +34,6 @@ using CSharpConcepts.Polymorphism;
 //ipark.StopVehicle();
 
 //abstract class
-//Driving driving = new Driving();
 //VehicleDriver driv = new VehicleDriver();
 //driv.StartVehicle();
 //driv.DriveVehicle();
@@ -46,11 +46,25 @@ using CSharpConcepts.Polymorphism;
 //Console.WriteLine(Singleton.Count);
 
 //VariableTypes
-VariableTypes vt = new VariableTypes();
-vt.DemonstrateValueTypes();
-vt.DemonstrateRefTypes();
+//VariableTypes vt = new VariableTypes();
+//vt.DemonstrateValueTypes();
+//vt.DemonstrateRefTypes();
 
 
 //Console.WriteLine(StaticClassDemo.connectionString);
 //StaticClassDemo.ChangeDatabase("BankStorage");
 //Console.WriteLine(StaticClassDemo.connectionString);
+
+
+Rectangle rec;
+rec = new Square();
+rec.SetWidth(10);
+rec.SetHeight(20); 
+Console.WriteLine(rec.Height);   
+Console.WriteLine(rec.Width);
+
+rec = new Rectangle();
+rec.SetWidth(20);
+rec.SetHeight(20);
+Console.WriteLine(rec.Height);
+Console.WriteLine(rec.Width);

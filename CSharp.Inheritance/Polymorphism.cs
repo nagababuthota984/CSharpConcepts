@@ -9,10 +9,7 @@ namespace CSharpConcepts.Polymorphism
     
     internal class Vehicle
     {
-        public void MakeSound(string message)
-        {
-            Console.WriteLine(message);
-        }
+        
         public virtual void MakeSound()
         {
             Console.WriteLine("Vehicle made horn");
@@ -29,7 +26,7 @@ namespace CSharpConcepts.Polymorphism
             Console.WriteLine("Bike sounded horn");
             base.MakeSound();
         }
-        public new void Start()
+        public new void Start()           //method hiding.. cannot be called using Base class reference.
         {
             Console.WriteLine("Bike started");
         }

@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace CSharpConcepts.Interfaces
 {
+    /// <summary>
+    /// when to use --> if the contract is solid and lesser probability of altering the structure in future
+    /// example -> car Driving interface which won't change.
+    /// </summary>
     interface IDriving
     {
         void StartVehicle();

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace CSharp.Inheritance
 {
     //inheritance main purpose is to implement code reusability.
-    //used to modify the behaviour of an existing class without change the structure of that class.
+    //used to modify the behaviour of an existing class without changing the structure of that class.
     internal class Animal
     {
         public Animal()
@@ -18,6 +18,11 @@ namespace CSharp.Inheritance
         {
             Console.WriteLine($"Hi i am {name}");
         }
+        public static void SayHello()
+        {
+            Console.WriteLine("Helloo!!");
+        }
+
     }
     internal class Dog:Animal
     {
@@ -29,6 +34,7 @@ namespace CSharp.Inheritance
         {
             Console.WriteLine("Bow Bow");
         }
+
     }
     internal class Cat : Animal
     {
