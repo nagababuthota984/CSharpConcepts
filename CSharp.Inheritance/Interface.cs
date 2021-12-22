@@ -19,7 +19,7 @@ namespace CSharpConcepts.Interfaces
         void ApplyBrakes();
         void StopVehicle();
     }
-    interface IParking
+    public interface IParking
     {
         bool IsEmptyParkingSlot();
         void ReduceSpeed();
@@ -30,6 +30,7 @@ namespace CSharpConcepts.Interfaces
     }
     public class Driver : IDriving,IParking
     {
+        //public IParking parking;
         public void Accelerate()
         {
             Console.WriteLine("Accelerated");

@@ -22,6 +22,7 @@ namespace CSharpConcepts
             {
                 Console.WriteLine("Make use of this library.. but please don't try to mess it up by inheriting it");
             }
+            
         }
     }
 }

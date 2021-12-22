@@ -10,6 +10,7 @@ namespace CSharp.Inheritance
     //used to modify the behaviour of an existing class without changing the structure of that class.
     internal class Animal
     {
+        protected string NoOfLegs { get; set; }
         public Animal()
         {
             Console.WriteLine("Hi i am an animal");
@@ -23,8 +24,9 @@ namespace CSharp.Inheritance
             Console.WriteLine("Helloo!!");
         }
 
+
     }
-    internal class Dog:Animal
+    internal class Dog : Animal
     {
         public Dog() : base("Dog")
         {
@@ -38,9 +40,11 @@ namespace CSharp.Inheritance
     }
     internal class Cat : Animal
     {
-        public Cat():base("cat")
+        public string Type { get; set; }
+        public Cat() : base("cat")
         {
             Meow();
+            NoOfLegs = "4";   //protected properties cannot be accessed using child instances.. but accessible only in child classes
         }
 
         public void Meow()

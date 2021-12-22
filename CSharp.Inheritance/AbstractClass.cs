@@ -12,7 +12,14 @@ namespace CSharpConcepts.AbstractClass
     /// </summary>
     public abstract class Driving
     {
-
+        public Driving()
+        {
+            Console.WriteLine("This is abstract class.");
+        }
+        public Driving(string driverName)
+        {
+            Console.WriteLine(driverName);
+        }
         public abstract void StartVehicle();
         public  void DriveVehicle()
         {
@@ -21,10 +28,13 @@ namespace CSharpConcepts.AbstractClass
 
         public abstract void StopVehicle();
     }
-    public class VehicleDriver : Driving
+    public class Driver : Driving
     {
+
+
         public override void StartVehicle()
         {
+            //base("ravi");
             Console.WriteLine("Starting the vehicle");
         }
         public override void StopVehicle()

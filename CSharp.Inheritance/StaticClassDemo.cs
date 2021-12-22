@@ -20,10 +20,25 @@ namespace CSharpConcepts
         {
             databaseName = "BankStore";
             connectionString =dbParams + $"Database={databaseName}";
+            Console.WriteLine("Im in static class");
         }
         public static void ChangeDatabase(string dbName)
         {
             connectionString = dbParams + $"Database={dbName}";
+        }
+        /// <summary>
+        /// Extension Method which helps comparing 2 strings.
+        /// </summary>
+        /// <param name="input"></param>
+        /// <param name="toCompare"></param>
+        /// <returns></returns>
+        public static bool Compare(this string input, string toCompare)
+        {
+            Console.WriteLine("This is extension method");
+            if (string.IsNullOrEmpty(input) && string.IsNullOrEmpty(toCompare) && input.Equals(toCompare))
+                return true;
+            else
+                return false;
         }
 
 

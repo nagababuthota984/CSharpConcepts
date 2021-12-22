@@ -7,8 +7,12 @@ using CSharpConcepts.Polymorphism;
 using static CSharpConcepts.LiskovSubstitutionPrinciple;
 
 //Inheritance
-//Dog dog = new Dog();
-//Cat cat = new Cat();
+
+
+Cat cat = new Cat();
+Console.Write(cat.);
+//ReflectionsDemo rd = new ReflectionsDemo();
+//rd.demo();
 
 
 //Polymorphism
@@ -56,15 +60,19 @@ using static CSharpConcepts.LiskovSubstitutionPrinciple;
 //Console.WriteLine(StaticClassDemo.connectionString);
 
 
-Rectangle rec;
-rec = new Square();
-rec.SetWidth(10);
-rec.SetHeight(20); 
-Console.WriteLine(rec.Height);   
-Console.WriteLine(rec.Width);
+//Rectangle rec;
+//rec = new Square();
+//rec.SetWidth(10);
+//rec.SetHeight(20); 
+//Console.WriteLine(rec.Height);   
+//Console.WriteLine(rec.Width);
 
-rec = new Rectangle();
-rec.SetWidth(20);
-rec.SetHeight(20);
-Console.WriteLine(rec.Height);
-Console.WriteLine(rec.Width);
+//rec = new Rectangle();
+//rec.SetWidth(20);
+//rec.SetHeight(20);
+//Console.WriteLine(rec.Height);
+//Console.WriteLine(rec.Width);
+
+//ClassTeacher classTeacher = new ClassTeacher();
+//classTeacher.StartEvaluating();
+
