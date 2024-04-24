@@ -1,20 +1,47 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharpConcepts
+﻿namespace CSharpConcepts
 {
+
+    public class Usage
+    {
+        static void Main()
+        {
+            ClassTeacher teacher = new ClassTeacher();
+            Student student = new Student { MarksInChemistry = 40, MarksInPhysics = 60, MarksInMaths = 39, MarksInLanguages = 280, Name = "Arun", IsAnswerPaperIntact = true };
+            teacher.EvaluateMarks(student);
+        }
+    }
+
     //class teacher and evaluator are 2 parties.. and the delegate promote helper acts as a communicator b/w these 2 parties.
     public class ClassTeacher
     {
-        public void StartEvaluating()
+        public delegate void EvaluationHelper(Student std);
+
+        public void EvaluateMarks(Student student)
         {
-            Evaluator eval = new Evaluator();
-            eval.MakeValuationOfMarks(PromoteStudent);
+            //delegated the evaluation process.
+            EvaluationHelper evaluationHelper = Evaluator.EvaluateStudent;
+            evaluationHelper.Invoke(student);
         }
-        public void PromoteStudent(Student std)
+
+        public void MarkAttendance()
+        {
+
+        }
+
+        public void TakeLecture()
+        {
+
+        }
+        
+        public void ConductTest()
+        {
+
+        }
+    }
+    public class Evaluator
+    {
+
+        public static void EvaluateStudent(Student std)
         {
             if (std.MarksInLanguages > 250 && std.MarksInMaths > 40)
                 Console.WriteLine(std.Name + " Passed");
@@ -22,17 +49,6 @@ namespace CSharpConcepts
                 Console.WriteLine(std.Name + " Failed");
 
         }
-    }
-    public class Evaluator
-    {
-        public Student std = new Student { MarksInChemistry = 40, MarksInPhysics = 60, MarksInMaths = 39, MarksInLanguages = 280, Name = "Arun",IsAnswerPaperIntact=true };
-        public delegate void PromoteHelper(Student std);
-        public void MakeValuationOfMarks(PromoteHelper phm)
-        {
-            if(std.IsAnswerPaperIntact)
-                phm(std);
-        }
-
 
     }
     public class Student
